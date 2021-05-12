@@ -1,0 +1,20 @@
+th{
+    font-style: inherit;
+    font-size: 20px;
+    white-space: nowrap;
+}
+tbody{
+    font-style:inherit ;
+  width: max-content;
+  font-size: 20px;
+   white-space: nowrap;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+app-menu{
+    display: flex;
+  flex-direction: row;
+}
+#manage{
+  margin-top: 10%;
+
+}

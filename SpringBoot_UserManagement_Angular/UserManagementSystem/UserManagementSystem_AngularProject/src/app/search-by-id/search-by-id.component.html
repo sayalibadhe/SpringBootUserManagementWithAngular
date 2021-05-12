@@ -1,0 +1,51 @@
+<app-menu>
+
+</app-menu>
+<div id="manage">
+<input type="number" class="form-control" id="val" placeholder="Enter ID of the User" #id style="width: 400px;margin-top:30px;margin-left: 350px;">
+
+<button mat-button (click)="getValue(id.value)" style="margin-left: 300px;width: 500px;margin-top:20px;padding: 7px;font-weight: bold;font-size: 21px;">Show User</button>
+<div [hidden]="b" > 
+    <mat-card class="size" id="manage">
+        <div class="container text-center">
+            <img class="img-fluid" style="width: 100px ;" src="https://cdn3.iconfinder.com/data/icons/gradient-circle/36/1014-512.png">
+            <br><br>
+            <mat-card-title style="color: deeppink;">User Details</mat-card-title>
+            <mat-card-content style="font-size: x-large; align-content: flex-start;">
+              <div class="content"> 
+                 <label> First Name : </label>  <label> {{users.fname}}</label>
+        
+        
+              </div>
+              <div class="content"> 
+                <label> Last Name : </label><label> {{users.lname}}</label>
+         
+         
+               </div>
+               <div class="content"> 
+                <label> Contact : </label> <label> {{users.contact}}</label>
+         
+         
+               </div>
+               <div class="content"> 
+                <label> Email Id : </label> <label> {{users.email}}</label>
+         
+         
+               </div>
+               <div class="content"> 
+                <label> City : </label><label> {{users.city}}</label>
+         
+         
+               </div>
+            </mat-card-content>
+        </div>
+        </mat-card>
+   
+</div>
+
+<br/>
+<div *ngIf="a" >
+   
+    <h2 style="text-align: center; font-size: xx-large; color: red;" >Sorry!! No User Found with ID: {{n}}<br> Please enter valid id</h2>
+</div>
+</div>

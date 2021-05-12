@@ -1,0 +1,84 @@
+<mat-toolbar color="accent" >
+  <h1> User Management System</h1>
+
+</mat-toolbar>
+
+
+ <div class="bootstrap-wrapper" id="manage">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="container text-center">
+          <img class="img-fluid" style="width: 100px"  src="https://cdn3.iconfinder.com/data/icons/gradient-circle/36/5041-512.png">
+        </div>
+        <h1 class="text-center" style="color: deeppink;">
+          Login here!
+        </h1>
+    
+        <form class="form-group">
+          <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+          <div class="alert alert-success" *ngIf='loginSuccess'>{{successMessage}}</div>
+          
+          <div class="container text-center form-group" style="font-size: 14px;">
+            <mat-form-field [style.width.px]=500  appearance="outline">
+              <mat-label> UserName</mat-label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="username" 
+              name="username" matInput required>
+              </mat-form-field>
+          </div>
+          <div class="container text-center form-group">
+            <mat-form-field [style.width.px]=500   appearance="outline">
+              <mat-label> Password</mat-label>
+            <input type="password" class="form-control" [(ngModel)]="password" id="password" 
+              name="password" matInput required>
+              
+            </mat-form-field>
+          </div>
+          <button (click)=handleLogin() style="margin-left: 120px; height: 40px ; width: 100px" mat-raised-button color="primary" >Login</button>
+          <button style="margin-left: 90px; height: 40px ; width: 100px"  type="reset" mat-raised-button color="accent">Reset 
+
+          </button> 
+        </form>
+       </div>
+    </div> 
+  </div> 
+ </div>
+
+  <!-- <div class="bootstrap-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="container text-center">
+            <img class="img-fluid" style="width: 100px"  src="https://lh3.googleusercontent.com/proxy/xeJLNqNDgAR7wKLxmp77J8mV5x2i5V2zxSYkHJy5D2N3TOtIrE0rdb2oqjwnh5FbIXugw8wB2Kp_VUXxBTZ3FP8Q5VuOuzm1e8eDjnoXETko">
+          </div>
+          <h1 class="text-center">
+            Login here!
+          </h1>
+          <form class="form-group">
+            <div class="container text-center form-group ">
+            <mat-form-field [style.width.px]=400 appearance="outline">
+              <mat-label> UserName</mat-label>
+              <input   type="text" class="form-control" required [(ngModel)]="username" matInput>
+            </mat-form-field>
+          </div>
+            <br>
+            <div class="container text-center form-group ">
+            <mat-form-field [style.width.px]=400 appearance="outline">
+              <mat-label> Password</mat-label>
+              <input  type="password" class="form-control" required [(ngModel)]="password" matInput>
+            </mat-form-field>
+          </div>
+
+            <div class="container">
+              <button (click)=handleLogin() style="margin-left: 120px;" type="submit" mat-raised-button color="primary">Login 
+
+              </button>
+              <button style="margin-left: 90px;"  type="reset" mat-raised-button color="accent">Reset 
+
+              </button> 
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
