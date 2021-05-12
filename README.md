@@ -16,3 +16,8 @@ This project is made using:
 
 
 The project UI is designed using Angular Material with features like pagination,mat-toolbars and mat-cards. The UI designed is responsive and can be viewed on small screens also.
+ 
+ 
+ ![image](https://user-images.githubusercontent.com/80960895/117953720-ec0e5b80-b333-11eb-8732-0f936caa44ca.png)
+
+
